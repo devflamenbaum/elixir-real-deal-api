@@ -7,5 +7,7 @@ defmodule RealDealApiWeb.Router do
 
   scope "/api", RealDealApiWeb do
     pipe_through :api
+
+    post "/accounts/create", AccountController, :create
   end
 end
